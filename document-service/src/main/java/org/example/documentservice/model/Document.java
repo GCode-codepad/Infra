@@ -23,6 +23,9 @@ public class Document {
     @Column(nullable = false)
     private String title;
 
+    @Column(nullable = true)
+    private String firebaseFilePath;
+
     @Enumerated(EnumType.STRING) // Store enum values as strings in the database
     @Column(nullable = false)
     private AccessLevel accessLevel;
